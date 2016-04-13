@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form validation</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src ="jqueryValid.js"></script>
+</head>
+<body>
+
+
+<form >
+  <h1>Payment form</h1>
+  <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+ 
+  <section>
+    <h2>Contact information</h2>
+    
+    <fieldset>
+      <legend>Title</legend>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" id="title_1" name="title" value="M." />
+            Mister
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" id="title_2" name="title" value="Ms." />
+            Miss
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    
+    <p>
+      <label>
+        <span>Name: </span>
+        <input type="text" id="name" name="username"  />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+    
+     <p>
+      <label>
+        <span>E-mail: </span>
+        <input type="email" id="email" name="usermail"  />
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+    </p>
+  </section>
+  <section>
+   <p>
+   	 <input id="submitBtn" type="submit">
+     <!-- <button>Validate the payment</button> -->
+   </p>
+ </section>
+ 
+ <!--  <section>
+   <h2>Payment information</h2>
+   
+   <p>
+     <label id = "card">
+       <span>Card type:</span>
+       <select id="card" name="usercard">
+         <option value="visa">Visa</option>
+         <option value="mc">Mastercard</option>
+         <option value="amex">American Express</option>
+       </select>
+     </label>
+   </p>
+   <p>
+     <label id = "number">
+       <span>Card number:</span>
+       <input type="text" id="number" name="cardnumber"  />
+       <strong><abbr title="required">*</abbr></strong>
+     </label>
+   </p>
+   <p>
+     <label id = "date">
+       <span>Expiration date:</span>
+       <input type="text" id="date" name="expiration"  />
+       <strong><abbr title="required">*</abbr></strong>
+       <em>formated as mm/yy</em>
+     </label>
+   </p>
+ </section>
+  
+  -->
+</form>
+
+</body>
+</html>
